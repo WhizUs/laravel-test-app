@@ -52,6 +52,8 @@ ENV APP_HOME /var/www/html
 COPY . $APP_HOME
 WORKDIR $APP_HOME
 
+RUN cp -n .env.example .env
+
 RUN chown -R www-data:www-data $APP_HOME && \
     yarn && yarn install --production && rm -rf node_modules
 
