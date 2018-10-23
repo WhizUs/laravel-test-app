@@ -7,5 +7,6 @@ stages:
       tag: laravel-php-example:${CICD_EXECUTION_SEQUENCE}
 - name: Deploy
   steps:
+  - {}
   - applyYamlConfig:
-    path: ./deploy/deployment.yml
+      path: ./deploy/deployment.yaml
