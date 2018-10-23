@@ -9,4 +9,4 @@ stages:
   steps:
   - {}
   - applyYamlConfig:
-      path: ./deploy/deployment.yaml
+      path: ./deploy/deployment.yml
